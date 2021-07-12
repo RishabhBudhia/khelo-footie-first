@@ -86,7 +86,7 @@ function SubForm() {
       }
       if (count == 5) {
         // alert("Form Data Submitted :)");
-        window.location.href = "thank-you-footie-first.html";
+        window.location.href = "thank-you.html";
       } else {
         // alert("Please fill all the fields");
       }
@@ -146,7 +146,7 @@ function MobSubForm() {
 
       if (count == 5) {
         // alert("Form Data Submitted :)");
-        window.location.href = "thank-you-footie-first.html";
+        window.location.href = "thank-you.html";
       } else {
         // alert("Please fill all the fields");
       }
