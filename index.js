@@ -428,7 +428,6 @@ function mob_modify(val) {
     document.querySelector(".m_age2").style.display = "none";
     document.querySelector(".m_age4").style.display = "none";
     document.querySelector(".m_age5").style.display = "none";
-    document.querySelector(".m_age6").style.display = "none";
   } else if (location == "Prabhadevi") {
     document.querySelector(".m_age1").style.display = "block";
 
