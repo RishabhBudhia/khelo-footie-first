@@ -27,6 +27,36 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NPG23WP');</script>
     <!-- End Google Tag Manager -->
+
+    <script>
+        const getUTMParamsFromUrl = () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            let paramObj = {};
+            for (var value of urlParams.keys()) {
+                paramObj[value] = urlParams.get(value);
+            }
+            if (!isEmptyObj(paramObj)) {
+                let utmObject = Object.keys(paramObj).reduce((acc, value) => {
+                    const isUTMQueryParam = value.toUpperCase().indexOf("UTM_") === 0;
+                    if (isUTMQueryParam) {
+                        return { ...acc, [value.toLowerCase()]: paramObj[value] };
+                    }
+                    return acc;
+                }, {});
+                return utmObject;
+            }
+            return {};
+        };
+        const utmParams = getUTMParamsFromUrl();
+        const utmParamsForStorage = {
+            utmParams,
+            setDate: new Date(),
+        };
+        localStorage.setItem(
+            "km-utm",
+            JSON.stringify(utmParamsForStorage)
+        );
+    </script>
 </head>
 
 <body onload="size()">
@@ -141,7 +171,7 @@
 
                             <div>
                                 <input type="text" id="date" name="Date" placeholder="Select Date"
-                                    onfocus="(this.type='date')" onchange="datechanger(event)" required>
+                                    onclick="(this.type='date')" onchange="datechanger(event)" required>
                             </div>
                             <div>
                                 <select name="Time" id="time" required>
@@ -222,7 +252,7 @@
 
                         <div>
                             <input type="text" id="mob_date" name="Date" placeholder="Select Date"
-                                onfocus="(this.type='date')" onchange="mob_datechanger(event)" required>
+                                onclick="(this.type='date')" onchange="mob_datechanger(event)" required>
                         </div>
                         <div>
                             <select name="Time" id="mob_time" required>
@@ -258,7 +288,7 @@
                             <span> in MDFA league </span> 2nd division
                         </span>
                         <img class="" src="./assests/mobile/icon4.svg" alt="" srcset="" style="margin-left: 0.5rem;">
-                        <span class="ml-2 mt-3">13 centres in Mumbai</span>
+                        <span class="ml-2 mt-2">13 centres in Mumbai</span>
                     </div>
                 </div>
 
