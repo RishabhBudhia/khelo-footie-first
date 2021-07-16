@@ -383,19 +383,19 @@ button:hover {
   .mobile_title {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     color: #283740;
   }
 
   .mobile_para {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 26.35px;
+    font-size: 16px;
+    /* line-height: 26.35px; */
     padding: 0 1.5rem;
     color: #617078;
   }
   .form_head {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   form {
@@ -435,7 +435,7 @@ button:hover {
     border: 2px solid #ff4e00;
     box-sizing: border-box;
     backdrop-filter: blur(4px);
-    border-radius: 16px;
+    border-radius: 18px;
     color: #283740;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -447,7 +447,7 @@ button:hover {
   .curr_title {
     font-family: Arial, Helvetica, sans-serif;
     color: #283740;
-    font-size: 25px;
+    font-size: 24px;
   }
 
   .mobile_cirriculum {
@@ -456,7 +456,7 @@ button:hover {
     color: #283740;
   }
   .curr_perk {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
   }
   .mobile_footer {

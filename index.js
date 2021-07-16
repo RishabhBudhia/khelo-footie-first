@@ -261,10 +261,10 @@ function modify(val) {
     document.querySelector(".age3").style.display = "none";
     document.querySelector(".age4").style.display = "none";
     document.querySelector(".age5").style.display = "none";
-  } else if (location == "Churchgate") {
+  } else if (location == "Oval Maidan Churchgate") {
     document.querySelector(".age1").style.display = "block";
     document.querySelector(".age2").style.display = "block";
-    document.querySelector(".age3").style.display = "block";
+    document.querySelector(".age3").style.display = "none";
 
     document.querySelector(".age0").style.display = "none";
     document.querySelector(".age4").style.display = "none";
@@ -285,15 +285,15 @@ function modify(val) {
     document.querySelector(".age2").style.display = "none";
     document.querySelector(".age4").style.display = "none";
     document.querySelector(".age5").style.display = "none";
-  } else if (location == "Parel") {
+  } else if (location == "Priyadarshani Park Napean Sea Road") {
     document.querySelector(".age0").style.display = "block";
     document.querySelector(".age1").style.display = "block";
 
-    document.querySelector(".age2").style.display = "none";
-    document.querySelector(".age4").style.display = "none";
-    document.querySelector(".age5").style.display = "none";
-    document.querySelector(".age6").style.display = "none";
-  } else if (location == "Prabhadevi") {
+    document.querySelector(".age2").style.display = "block";
+    document.querySelector(".age3").style.display = "block";
+    document.querySelector(".age4").style.display = "block";
+    document.querySelector(".age5").style.display = "block";
+  } else if (location == "NSCI Worli") {
     document.querySelector(".age1").style.display = "block";
 
     document.querySelector(".age0").style.display = "none";
@@ -334,7 +334,7 @@ function modify(val) {
             date.getDay() === 5 ||
             date.getDay() === 6
           );
-        } else if (location == "Churchgate") {
+        } else if (location == "Oval Maidan Churchgate") {
           return (
             date.getDay() === 0 ||
             date.getDay() === 1 ||
@@ -342,10 +342,8 @@ function modify(val) {
             date.getDay() === 5 ||
             date.getDay() === 6
           );
-        } else if (location == "Parel") {
-          return (
-            date.getDay() === 0 || date.getDay() === 4 || date.getDay() === 6
-          );
+        } else if (location == "Priyadarshani Park Napean Sea Road") {
+          return date.getDay() === 0 || date.getDay() === 6;
         } else if (location == "Versova") {
           return date.getDay() === 0 || date.getDay() === 6;
         } else if (location == "Juhu") {
@@ -355,11 +353,9 @@ function modify(val) {
             date.getDay() === 3 ||
             date.getDay() === 5
           );
-        } else if (location == "Parel") {
-          return (
-            date.getDay() === 0 || date.getDay() === 4 || date.getDay() === 6
-          );
-        } else if (location == "Prabhadevi") {
+        } else if (location == "Priyadarshani Park Napean Sea Road") {
+          return date.getDay() === 0 || date.getDay() === 6;
+        } else if (location == "NSCI Worli") {
           return (
             date.getDay() === 0 ||
             date.getDay() === 2 ||
@@ -397,10 +393,10 @@ function mob_modify(val) {
     document.querySelector(".m_age3").style.display = "none";
     document.querySelector(".m_age4").style.display = "none";
     document.querySelector(".m_age5").style.display = "none";
-  } else if (location == "Churchgate") {
+  } else if (location == "Oval Maidan Churchgate") {
     document.querySelector(".m_age1").style.display = "block";
     document.querySelector(".m_age2").style.display = "block";
-    document.querySelector(".m_age3").style.display = "block";
+    document.querySelector(".m_age3").style.display = "none";
 
     document.querySelector(".m_age0").style.display = "none";
     document.querySelector(".m_age4").style.display = "none";
@@ -421,14 +417,15 @@ function mob_modify(val) {
     document.querySelector(".m_age2").style.display = "none";
     document.querySelector(".m_age4").style.display = "none";
     document.querySelector(".m_age5").style.display = "none";
-  } else if (location == "Parel") {
+  } else if (location == "Priyadarshani Park Napean Sea Road") {
     document.querySelector(".m_age0").style.display = "block";
     document.querySelector(".m_age1").style.display = "block";
 
-    document.querySelector(".m_age2").style.display = "none";
-    document.querySelector(".m_age4").style.display = "none";
-    document.querySelector(".m_age5").style.display = "none";
-  } else if (location == "Prabhadevi") {
+    document.querySelector(".m_age2").style.display = "block";
+    document.querySelector(".m_age3").style.display = "block";
+    document.querySelector(".m_age4").style.display = "block";
+    document.querySelector(".m_age5").style.display = "block";
+  } else if (location == "NSCI Worli") {
     document.querySelector(".m_age1").style.display = "block";
 
     document.querySelector(".m_age0").style.display = "none";
@@ -469,7 +466,7 @@ function mob_modify(val) {
             date.getDay() === 5 ||
             date.getDay() === 6
           );
-        } else if (location == "Churchgate") {
+        } else if (location == "Oval Maidan Churchgate") {
           return (
             date.getDay() === 0 ||
             date.getDay() === 1 ||
@@ -477,10 +474,8 @@ function mob_modify(val) {
             date.getDay() === 5 ||
             date.getDay() === 6
           );
-        } else if (location == "Parel") {
-          return (
-            date.getDay() === 0 || date.getDay() === 4 || date.getDay() === 6
-          );
+        } else if (location == "Priyadarshani Park Napean Sea Road") {
+          return date.getDay() === 0 || date.getDay() === 6;
         } else if (location == "Versova") {
           return date.getDay() === 0 || date.getDay() === 6;
         } else if (location == "Juhu") {
@@ -490,11 +485,9 @@ function mob_modify(val) {
             date.getDay() === 3 ||
             date.getDay() === 5
           );
-        } else if (location == "Parel") {
-          return (
-            date.getDay() === 0 || date.getDay() === 4 || date.getDay() === 6
-          );
-        } else if (location == "Prabhadevi") {
+        } else if (location == "Priyadarshani Park Napean Sea Road") {
+          return date.getDay() === 0 || date.getDay() === 6;
+        } else if (location == "NSCI Worli") {
           return (
             date.getDay() === 0 ||
             date.getDay() === 2 ||
@@ -543,7 +536,7 @@ function datechanger(event) {
     document.querySelector(".time2").style.display = "none";
     document.querySelector(".time3").style.display = "none";
     document.querySelector(".time5").style.display = "none";
-  } else if (location == "Churchgate") {
+  } else if (location == "Oval Maidan Churchgate") {
     document.querySelector(".time4").style.display = "block";
 
     document.querySelector(".time0").style.display = "none";
@@ -585,7 +578,7 @@ function datechanger(event) {
       document.querySelector(".time3").style.display = "none";
       document.querySelector(".time5").style.display = "none";
     }
-  } else if (location == "Parel") {
+  } else if (location == "Priyadarshani Park Napean Sea Road") {
     document.querySelector(".time4").style.display = "block";
 
     document.querySelector(".time0").style.display = "none";
@@ -593,14 +586,14 @@ function datechanger(event) {
     document.querySelector(".time2").style.display = "none";
     document.querySelector(".time3").style.display = "none";
     document.querySelector(".time5").style.display = "none";
-  } else if (location == "Prabhadevi") {
-    document.querySelector(".time5").style.display = "block";
+  } else if (location == "NSCI Worli") {
+    document.querySelector(".time4").style.display = "block";
 
     document.querySelector(".time0").style.display = "none";
     document.querySelector(".time1").style.display = "none";
     document.querySelector(".time2").style.display = "none";
     document.querySelector(".time3").style.display = "none";
-    document.querySelector(".time4").style.display = "none";
+    document.querySelector(".time5").style.display = "none";
   } else if (location == "Shivaji Park") {
     document.querySelector(".time4").style.display = "block";
 
@@ -643,7 +636,7 @@ function mob_datechanger(event) {
     document.querySelector(".m_time2").style.display = "none";
     document.querySelector(".m_time3").style.display = "none";
     document.querySelector(".m_time5").style.display = "none";
-  } else if (location == "Churchgate") {
+  } else if (location == "Oval Maidan Churchgate") {
     document.querySelector(".m_time4").style.display = "block";
 
     document.querySelector(".m_time0").style.display = "none";
@@ -685,7 +678,7 @@ function mob_datechanger(event) {
       document.querySelector(".m_time3").style.display = "none";
       document.querySelector(".m_time5").style.display = "none";
     }
-  } else if (location == "Parel") {
+  } else if (location == "Priyadarshani Park Napean Sea Road") {
     document.querySelector(".m_time4").style.display = "block";
 
     document.querySelector(".m_time0").style.display = "none";
@@ -693,14 +686,14 @@ function mob_datechanger(event) {
     document.querySelector(".m_time2").style.display = "none";
     document.querySelector(".m_time3").style.display = "none";
     document.querySelector(".m_time5").style.display = "none";
-  } else if (location == "Prabhadevi") {
-    document.querySelector(".m_time5").style.display = "block";
+  } else if (location == "NSCI Worli") {
+    document.querySelector(".m_time4").style.display = "block";
 
     document.querySelector(".m_time0").style.display = "none";
     document.querySelector(".m_time1").style.display = "none";
     document.querySelector(".m_time2").style.display = "none";
     document.querySelector(".m_time3").style.display = "none";
-    document.querySelector(".m_time4").style.display = "none";
+    document.querySelector(".m_time5").style.display = "none";
   } else if (location == "Shivaji Park") {
     document.querySelector(".m_time4").style.display = "block";
 

@@ -21,6 +21,36 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NPG23WP');</script>
     <!-- End Google Tag Manager -->
+
+    <script>
+        const getUTMParamsFromUrl = () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            let paramObj = {};
+            for (var value of urlParams.keys()) {
+                paramObj[value] = urlParams.get(value);
+            }
+            if (!isEmptyObj(paramObj)) {
+                let utmObject = Object.keys(paramObj).reduce((acc, value) => {
+                    const isUTMQueryParam = value.toUpperCase().indexOf("UTM_") === 0;
+                    if (isUTMQueryParam) {
+                        return { ...acc, [value.toLowerCase()]: paramObj[value] };
+                    }
+                    return acc;
+                }, {});
+                return utmObject;
+            }
+            return {};
+        };
+        const utmParams = getUTMParamsFromUrl();
+        const utmParamsForStorage = {
+            utmParams,
+            setDate: new Date(),
+        };
+        localStorage.setItem(
+            "km-utm",
+            JSON.stringify(utmParamsForStorage)
+        );
+    </script>
 </head>
 
 <body onload="display()">
